@@ -1,7 +1,7 @@
 <!-- Hero Section -->
 <header class="hero text-center">
     <div class="container">
-        <h1 class="display-4">Welcome to My Blog</h1>
-        <p class="lead">Explore insights, tutorials, and the latest in web development</p>
+        <h1 class="display-4">Welcome to QuickPost</h1>
+        <p class="lead">Publish Your Thoughts in a Click</p>
     </div>
 </header>

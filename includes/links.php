@@ -8,4 +8,15 @@
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 <!-- Custom CSS -->
-<link rel="stylesheet" href="includes/style.css">
+<!-- For blog post -->
+<!-- <link rel="stylesheet" href="../includes/style.css"> -->
+
+<?php
+
+if ($_SERVER['PHP_SELF'] == "/myblog/index.php") {
+    echo '<link rel="stylesheet" href="includes/style.css">';
+}else if($_SERVER['PHP_SELF'] == "/myblog/posts/single-post.php"){
+    echo '<link rel="stylesheet" href="../includes/style.css">';
+}
+?>
+
