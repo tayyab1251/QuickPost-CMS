@@ -1,0 +1,323 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+/* Colors */
+:root {
+    --primary-color: #27374d;
+    --secondary-color: #526d82;
+    --accent-color: #9db2bf;
+    --bg-color: #dde6ed;
+    --text-color: #27374d;
+    --card-bg-color: #ffffff;
+    --footer-bg-color: #27374d;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--primary-color);
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1rem;
+}
+
+/* Blog Post Cards */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.card-body {
+    background-color: var(--card-bg-color);
+    padding: 25px;
+}
+
+.card-title {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.card-text {
+    color: var(--secondary-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pagination .page-item a {
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    padding: 8px 15px;
+}
+
+.pagination .page-item.active a {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .pagination .page-item a {
+        color: var(--primary-color);
+        margin: 0 0.1rem;
+        border-radius: 8px;
+        padding: 8px 10px;
+    }
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.sidebar .widget {
+    margin-bottom: 30px;
+}
+
+.widget-title {
+    font-size: 1rem;
+    /* font-weight: 600; */
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.sidebar .widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar .widget ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar .widget ul li a {
+    color: var(--primary-color);
+}
+
+.sidebar .widget ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Comment Box */
+.comment-box {
+    background-color: #f1f1f1;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.comment-box input,
+.comment-box textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.comment-box button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+.comment-box button:hover {
+    background-color: var(--accent-color);
+}
+
+.comment-list li {
+    background-color: #e9ecef;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.comment-list li .comment-author {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+}
+
+/* Scroll-to-top button styles */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: none;
+    /* Initially hidden */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+#scrollToTopBtn i {
+    margin: 0;
+}
+
+/* Custom Sidebar and Button Styles */
+.sidebar {
+    background-color: #dde6ed;
+    border-radius: 8px;
+}
+
+.sidebar .nav-link {
+    color: #27374d;
+    padding: 12px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #526d82;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #27374d;
+    border-color: #27374d;
+}
+
+.btn-primary:hover {
+    background-color: #526d82;
+    border-color: #526d82;
+}
+
+.btn-secondary {
+    background-color: #9db2bf;
+    border-color: #9db2bf;
+}
+
+.btn-secondary:hover {
+    background-color: #526d82;
+    border-color: #526d82;
+}
+
+.card-title {
+    color: #27374d;
+}
+
+.card-body {
+    background-color: #f4f7fc;
+}

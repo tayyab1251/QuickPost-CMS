@@ -1,0 +1,94 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+}
+
+/* Colors */
+:root {
+    --primary-color: #27374D;
+    --secondary-color: #526D82;
+    --accent-color: #9DB2BF;
+    --bg-color: #DDE6ED;
+    --text-color: #27374D;
+    --card-bg-color: #FFFFFF;
+    --footer-bg-color: #27374D;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Custom Sidebar and Button Styles */
+.sidebar {
+    background-color: #DDE6ED;
+    border-radius: 8px;
+}
+
+.sidebar .nav-link {
+    color: #27374D;
+    padding: 12px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #526D82;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #27374D;
+    border-color: #27374D;
+}
+
+.btn-primary:hover {
+    background-color: #526D82;
+    border-color: #526D82;
+}
+
+.btn-secondary {
+    background-color: #9DB2BF;
+    border-color: #9DB2BF;
+}
+
+.btn-secondary:hover {
+    background-color: #526D82;
+    border-color: #526D82;
+}
+
+.card-title {
+    color: #27374D;
+}
+
+.card-body {
+    background-color: #F4F7FC;
+}
