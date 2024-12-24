@@ -1,11 +1,3 @@
-<?php
-// // Include authentication check
-// include 'auth.php';
-
-// // Fetch user data from session or database
-// $user_id = $_SESSION['user_id'];  // Example: assuming session contains user ID
-// ?>
-
 <?php include 'comonFiles/header.php'; ?>
 
 <div class="container py-5">

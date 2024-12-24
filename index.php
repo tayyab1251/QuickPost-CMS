@@ -11,7 +11,7 @@ require 'request.php';
     <div class="row">
         <!-- Blog Posts -->
         <div class="col-md-8">
-
+            
             <?php getAllPosts() ?>
 
             <!-- Pagination -->
