@@ -112,7 +112,7 @@ h4 {
     color: var(--secondary-color);
 }
 
-.btn-primary {
+.btn-primary , .btn-success {
     background-color: var(--primary-color);
     border: none;
     padding: 12px 20px;

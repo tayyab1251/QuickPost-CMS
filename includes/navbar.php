@@ -27,6 +27,9 @@
                             <li class="nav-item">
                                 <a class="nav-link btn btn-primary" href="admin/register.php">Register</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-success mx-1" href="admin/login.php">Login</a>
+                            </li>
                         </ul>
                     </div>';
             

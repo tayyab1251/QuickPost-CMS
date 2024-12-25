@@ -12,7 +12,7 @@ require './includes/navbar.php'; ?>
         <!-- Main Content -->
         <div class="col-md-9">
             <!-- Profile Overview Card -->
-            <?php require './includes/profile.php'; ?>
+            <?php require './includes/profile-card.php'; ?>
 
             <!-- Users Table Card -->
             <?php require './includes/users.php'; ?>

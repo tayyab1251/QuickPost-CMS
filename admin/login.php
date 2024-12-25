@@ -18,27 +18,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         echo 'Password is required';
         exit();
     }
+    // Check user register
+    $user = "SELECT * FROM `users` WHERE username = '$userName'";
+    $result = mysqli_query($conn, $user);
 
+    if (mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $storedPassword = $row['user_password'];
 
-        // Check user register
-        $user = "SELECT * FROM `users` WHERE username = '$userName'";
-        $result = mysqli_query($conn, $user);
+        if (password_verify($password, $storedPassword)) {
+            $_SESSION['loginStatus'] = true;
+            $_SESSION['userId'] = $row['user_id'];
 
-        if(mysqli_num_rows($result) > 0) {
-            $row = mysqli_fetch_assoc($result);
-            $storedPassword = $row['user_password'];
-
-            if(password_verify($password , $storedPassword)) {
-                $_SESSION['loginStatus'] = true;
-                echo '<script>alert("Successfully logged in");</script>';
-                echo '<script>window.open("index.php", "_self");</script>';
-            }else {
-                echo '<script>alert("Invalid credentials");</script>';
-            }
-        }else {
+            echo '<script>alert("Successfully logged in");</script>';
+            echo '<script>window.open("index.php", "_self");</script>';
+        } else {
             echo '<script>alert("Invalid credentials");</script>';
         }
-    
+    } else {
+        echo '<script>alert("Invalid credentials");</script>';
+    }
+
     mysqli_close($conn);
 }
 

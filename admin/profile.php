@@ -1,4 +1,25 @@
-<?php include 'comonFiles/header.php'; ?>
+<?php 
+
+session_start();
+if(!isset($_SESSION['loginStatus'])){
+    header("Location: login.php");
+    exit();
+}
+require './includes/header.php';  
+
+
+if(isset($_GET['edit']) && $_GET['edit'] == true && isset($_GET['id'])){
+    // echo "edit is true and id is set";
+    $id = $_GET['id'];
+    echo $id;
+}
+else {
+    echo "both are not set";
+}
+echo '<pre>';
+print_r($_SESSION);
+echo '</pre>';
+?>
 
 <div class="container py-5">
     <h3>Edit Profile</h3>
@@ -16,4 +37,4 @@
     </form>
 </div>
 
-<?php include 'comonFiles/footer.php'; ?>
+<?php include './includes/footer.php'; ?>

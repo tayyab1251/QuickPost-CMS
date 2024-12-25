@@ -64,6 +64,41 @@ h4 {
     background-color: #526D82;
     color: white;
 }
+#user-avatar {
+    width: 80px;
+    height: 80px;
+}
+/* users table */
+.table th, .table td {
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f7f7f7; 
+}
+
+.alert-heading {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #dc3545;
+}
+
+.alert {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn-outline-info {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: white;
+}
+
+/* users table */
 
 .btn-primary {
     background-color: #27374D;
