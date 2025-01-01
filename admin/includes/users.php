@@ -41,10 +41,10 @@
                             <i class="ri-eye-line"></i> View
                         </a>
                         <a href="profile.php?edit=true&id='.$userID.'" class="btn btn-outline-success btn-sm">
-                            <i class="ri-eye-line"></i> Edit
+                            <i class="ri-edit-line"></i> Edit
                         </a>
                         <a href="profile.php?delete=true&id='.$userID.'" class="btn btn-outline-danger btn-sm">
-                            <i class="ri-eye-line"></i> Delete
+                            <i class="ri-delete-bin-line"></i> Delete
                         </a>
                     </td>
                 </tr>';
